@@ -162,7 +162,7 @@ b, strong{ font-weight:500; }
 
 /* 수강 */
 .class{ display:grid; gap:20px; padding:36px 28px; border:1px solid var(--ink); border-radius:var(--r); }
-.class h2{ margin:0; }
+.class h2.en{ margin:0; }
 .class .btn{ justify-self:start; }
 @media (min-width:900px){ .class{ grid-template-columns:minmax(0,1fr) auto; align-items:center; padding:44px 48px; } .class .btn{ justify-self:end; } }
 
@@ -186,6 +186,7 @@ b, strong{ font-weight:500; }
 /* 푸터 · 하단 바 */
 .foot{ padding:56px 0 44px; text-align:center; background:var(--ink); color:#EDE6DF; }
 .foot .wm{ font-size:1.05rem; }
+.foot :focus-visible{ outline-color:#EDE6DF; }  /* 푸터 배경 = --ink라 밝은 링(R-10 · R-54) */
 .foot p{ margin:14px 0 0; font-size:.88rem; color:#CFC3B8; }
 .foot nav{ display:flex; flex-wrap:wrap; justify-content:center; gap:6px 20px; margin-top:16px; }
 .foot nav a{ font-size:.9rem; text-underline-offset:3px; }
@@ -204,7 +205,7 @@ b, strong{ font-weight:500; }
 <body>
 <header class="top" id="top">
   <div class="wrap bar">
-    <a class="wm" href="#top" aria-label="롬왁싱 처음으로">RROM WAXING</a>
+    <a class="wm" href="#top" aria-label="RROM WAXING 롬왁싱 처음으로">RROM WAXING</a>
     <nav class="nav" aria-label="섹션">
       <a href="#promise">promise</a><a href="#price">price</a><a href="#class">class</a><a href="#visit">visit</a>
     </nav>
@@ -326,7 +327,7 @@ b, strong{ font-weight:500; }
 
 <footer class="foot">
   <div class="wrap">
-    <a class="wm" href="#top" aria-label="처음으로">RROM WAXING</a>
+    <a class="wm" href="#top" aria-label="RROM WAXING 처음으로">RROM WAXING</a>
     <p>롬왁싱 · 충북 청주시 흥덕구 내수동로55번길 5 1층<br /><span class="nw">월–금 10:00–20:00 · 토 09:00–15:00 · 일 휴무</span></p>
     <nav aria-label="외부 링크">
       <a href="https://pf.kakao.com/_VlyGG" target="_blank" rel="noopener">카카오 채널</a>
