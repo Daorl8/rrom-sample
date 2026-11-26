@@ -39,7 +39,7 @@
 </script>
 <style>
 @font-face{ font-family:"RR Line"; src:url("rr-jost-v01.woff2") format("woff2"); font-weight:300 500; font-display:swap; }
-@font-face{ font-family:"RR Sans"; src:url("rr-pretendard-v02.woff2") format("woff2"); font-weight:300 500; font-display:swap; }
+@font-face{ font-family:"RR Sans"; src:url("rr-pretendard-v03.woff2") format("woff2"); font-weight:300 600; font-display:swap; }
 :root{
   --bg:#F3EEE9;       /* 최근 게시물 베이지 */
   --sand:#E8DFD6;     /* 면 */
@@ -97,7 +97,7 @@ b, strong{ font-weight:500; }
 .hero{ padding:30px 0 56px; }
 .hero .grid{ display:grid; gap:28px; }
 .hero .loc{ margin:0 0 6px; font-size:.95rem; color:var(--soft); }
-.hero h1{ margin:0; font-weight:300; font-size:clamp(1.9rem, 7.6vw, 3.1rem); line-height:1.25; letter-spacing:-.01em; }
+.hero h1{ margin:0; font-weight:600; font-size:clamp(1.9rem, 7.6vw, 3.1rem); line-height:1.25; letter-spacing:-.01em; }
 .hero h1 small{ display:block; margin-bottom:6px; font-weight:400; font-size:clamp(1rem, 4vw, 1.25rem); letter-spacing:0; }
 .hero .chip{ margin-top:16px; }
 .hero .btns{ display:grid; grid-template-columns:minmax(0,1.5fr) minmax(0,1fr) minmax(0,1fr); gap:6px; margin-top:22px; }
@@ -114,6 +114,9 @@ b, strong{ font-weight:500; }
 .sec{ padding:80px 0; }
 .sec.sand{ background:var(--sand); }
 .sec h2{ margin:0 0 14px; font-weight:400; font-size:clamp(1.5rem, 5.6vw, 2.2rem); line-height:1.35; }
+/* 섹션 제목 = 영문(다올 v0.1.2) · 최근 게시물 「WOMEN'S BRAZILIAN」처럼 가는 대문자 */
+.sec h2.en{ margin:0 0 22px; font-family:var(--line-font); font-weight:300; font-size:clamp(1.7rem, 6.4vw, 2.6rem); line-height:1.15; letter-spacing:.1em; text-transform:uppercase; }
+.class .ko{ margin:6px 0 0; font-weight:400; font-size:clamp(1.25rem, 4.8vw, 1.7rem); line-height:1.4; }
 .sec .sub{ margin:0; color:var(--soft); }
 
 /* 상담 */
@@ -233,8 +236,7 @@ b, strong{ font-weight:500; }
   <section class="sec sand" id="care" aria-labelledby="care-h">
     <div class="wrap care">
       <div>
-        <p class="label reveal">CONSULTING</p>
-        <h2 id="care-h" class="sr">상담 후 맞춤 시술</h2>
+        <h2 id="care-h" class="en reveal">Consulting<span class="sr"> 상담 후 맞춤 시술</span></h2>
         <p class="q reveal">고객님의 피부 상태와 모질을 꼼꼼하게 상담 후 맞춤 시술을 <span class="nw">진행하고 있습니다.</span></p>
         <p class="first reveal"><b>FOR FIRST WAXING</b>처음 왁싱을 받으시는 분들도 편안하게 관리 받으실 수 있도록 꼼꼼하게 설명 후 왁싱이 <span class="nw">진행됩니다.</span></p>
       </div>
@@ -244,8 +246,7 @@ b, strong{ font-weight:500; }
 
   <section class="sec" id="promise" aria-labelledby="promise-h">
     <div class="wrap">
-      <p class="label reveal">OUR PROMISE</p>
-      <h2 id="promise-h" class="reveal">롬왁싱의 약속</h2>
+      <h2 id="promise-h" class="en reveal">Our Promise<span class="sr"> 롬왁싱의 약속</span></h2>
       <div class="promise">
         <figure class="reveal"><img src="rr-brow.webp" alt="눈썹 왁싱 뒤 휴대폰 카메라로 눈썹을 비춰 보는 모습" width="900" height="921" loading="lazy" /></figure>
         <ol class="pl">
@@ -262,8 +263,7 @@ b, strong{ font-weight:500; }
   <section class="sec sand" id="price" aria-labelledby="price-h">
     <div class="wrap price">
       <div>
-        <p class="label reveal">FIRST VISIT</p>
-        <h2 id="price-h" class="reveal">첫방문 가격</h2>
+        <h2 id="price-h" class="en reveal">First Visit<span class="sr"> 첫방문 가격</span></h2>
         <div class="cards">
           <article class="card reveal"><span class="tag">WOMEN</span><h3>[첫방문] 여자브라질리언+진정팩</h3><p class="pr">60,000<span>원</span></p></article>
           <article class="card reveal"><span class="tag">MEN</span><h3>[첫방문] 남자브라질리언+진정팩</h3><p class="pr">85,000<span>원</span></p></article>
@@ -279,8 +279,8 @@ b, strong{ font-weight:500; }
     <div class="wrap">
       <div class="class reveal">
         <div>
-          <p class="label">CLASS</p>
-          <h2 id="class-h">현직원장 원데이, <span class="nw">왁싱정규반</span></h2>
+          <h2 id="class-h" class="en">Class</h2>
+          <p class="ko">현직원장 원데이, <span class="nw">왁싱정규반</span></p>
         </div>
         <a class="btn" href="https://pf.kakao.com/_VlyGG" target="_blank" rel="noopener">카카오 채널로 수강 문의</a>
       </div>
@@ -289,8 +289,7 @@ b, strong{ font-weight:500; }
 
   <section class="sec sand" id="visit" aria-labelledby="visit-h">
     <div class="wrap">
-      <p class="label reveal">RESERVATION &amp; LOCATION</p>
-      <h2 id="visit-h" class="reveal">예약 및 문의</h2>
+      <h2 id="visit-h" class="en reveal">Reservation<span class="sr"> 예약 및 문의</span></h2>
       <p class="sub reveal">100% 예약제이며 당일 예약도 <span class="nw">가능합니다.</span></p>
       <div class="visit">
         <div class="reveal">
