@@ -39,7 +39,7 @@
 </script>
 <style>
 @font-face{ font-family:"RR Line"; src:url("rr-jost-v01.woff2") format("woff2"); font-weight:300 500; font-display:swap; }
-@font-face{ font-family:"RR Sans"; src:url("rr-pretendard-v01.woff2") format("woff2"); font-weight:400 700; font-display:swap; }
+@font-face{ font-family:"RR Sans"; src:url("rr-pretendard-v02.woff2") format("woff2"); font-weight:300 500; font-display:swap; }
 :root{
   --bg:#F3EEE9;       /* 최근 게시물 베이지 */
   --sand:#E8DFD6;     /* 면 */
@@ -53,9 +53,10 @@
 }
 *{ box-sizing:border-box; }
 html{ scroll-behavior:auto; scroll-padding-top:114px; -webkit-text-size-adjust:100%; }
-body{ margin:0; background:var(--bg); color:var(--ink); font-family:var(--sans); font-size:16px; line-height:1.8; word-break:keep-all; overflow-wrap:break-word; -webkit-font-smoothing:antialiased; padding-bottom:66px; }
+body{ margin:0; background:var(--bg); color:var(--ink); font-family:var(--sans); font-weight:300; font-size:16px; line-height:1.8; word-break:keep-all; overflow-wrap:break-word; -webkit-font-smoothing:antialiased; padding-bottom:66px; }
 img{ display:block; max-width:100%; height:auto; }
 a{ color:inherit; }
+b, strong{ font-weight:500; }
 :focus-visible{ outline:2px solid var(--ink); outline-offset:3px; }
 [tabindex="-1"]:focus{ outline:none; }
 .nw{ white-space:nowrap; }
@@ -63,7 +64,7 @@ a{ color:inherit; }
 .wrap{ width:min(100% - 40px, 1080px); margin:0 auto; }
 
 /* 영문 라벨: 최근 게시물처럼 가는 대문자 · 넓은 자간 · 양옆 가는 선 */
-.wm{ font-family:var(--line-font); font-weight:400; letter-spacing:.42em; text-transform:uppercase; text-decoration:none; white-space:nowrap; }
+.wm{ font-family:var(--line-font); font-weight:300; letter-spacing:.42em; text-transform:uppercase; text-decoration:none; white-space:nowrap; }
 .label{ display:flex; align-items:center; gap:14px; margin:0 0 18px; font-family:var(--line-font); font-weight:400; font-size:.76rem; letter-spacing:.36em; text-transform:uppercase; color:var(--soft); }
 .label::before, .label::after{ content:""; flex:0 0 28px; height:1px; background:var(--taupe); }
 .label.center{ justify-content:center; }
@@ -85,7 +86,7 @@ a{ color:inherit; }
 @media (hover:hover){ .nav a:hover, .snav a:hover{ color:var(--ink); } }
 
 /* 버튼 */
-.btn{ display:inline-flex; align-items:center; justify-content:center; gap:.4em; min-height:50px; padding:0 20px; border:1px solid var(--ink); border-radius:var(--r); font-size:.94rem; font-weight:600; text-decoration:none; color:var(--ink); background:transparent; transition:background-color .25s ease, color .25s ease; }
+.btn{ display:inline-flex; align-items:center; justify-content:center; gap:.4em; min-height:50px; padding:0 20px; border:1px solid var(--ink); border-radius:var(--r); font-size:.94rem; font-weight:500; text-decoration:none; color:var(--ink); background:transparent; transition:background-color .25s ease, color .25s ease; }
 .btn.fill{ background:var(--ink); color:#FFFFFF; }
 .head-cta.btn{ min-height:40px; font-size:.86rem; padding:0 16px; }
 @media (hover:hover){ .btn:hover{ background:var(--sand); } .btn.fill:hover{ background:#54483F; } }
@@ -96,8 +97,8 @@ a{ color:inherit; }
 .hero{ padding:30px 0 56px; }
 .hero .grid{ display:grid; gap:28px; }
 .hero .loc{ margin:0 0 6px; font-size:.95rem; color:var(--soft); }
-.hero h1{ margin:0; font-weight:700; font-size:clamp(1.9rem, 7.6vw, 3.1rem); line-height:1.25; letter-spacing:-.01em; }
-.hero h1 small{ display:block; margin-bottom:6px; font-weight:500; font-size:clamp(1rem, 4vw, 1.25rem); letter-spacing:0; }
+.hero h1{ margin:0; font-weight:300; font-size:clamp(1.9rem, 7.6vw, 3.1rem); line-height:1.25; letter-spacing:-.01em; }
+.hero h1 small{ display:block; margin-bottom:6px; font-weight:400; font-size:clamp(1rem, 4vw, 1.25rem); letter-spacing:0; }
 .hero .chip{ margin-top:16px; }
 .hero .btns{ display:grid; grid-template-columns:minmax(0,1.5fr) minmax(0,1fr) minmax(0,1fr); gap:6px; margin-top:22px; }
 .hero .btns .btn{ padding:0 8px; white-space:nowrap; }
@@ -112,12 +113,12 @@ a{ color:inherit; }
 /* 공통 섹션 */
 .sec{ padding:80px 0; }
 .sec.sand{ background:var(--sand); }
-.sec h2{ margin:0 0 14px; font-weight:700; font-size:clamp(1.5rem, 5.6vw, 2.2rem); line-height:1.35; }
+.sec h2{ margin:0 0 14px; font-weight:400; font-size:clamp(1.5rem, 5.6vw, 2.2rem); line-height:1.35; }
 .sec .sub{ margin:0; color:var(--soft); }
 
 /* 상담 */
 .care{ display:grid; gap:36px; }
-.care .q{ margin:0; font-weight:600; font-size:clamp(1.2rem, 4.6vw, 1.6rem); line-height:1.6; }
+.care .q{ margin:0; font-weight:300; font-size:clamp(1.2rem, 4.6vw, 1.6rem); line-height:1.6; }
 .care .first{ margin:28px 0 0; padding-top:24px; border-top:1px solid var(--line); }
 .care .first b{ display:block; margin-bottom:6px; font-family:var(--line-font); font-weight:400; font-size:.76rem; letter-spacing:.3em; color:var(--soft); }
 .care figure{ margin:0; max-width:420px; }
@@ -131,7 +132,7 @@ a{ color:inherit; }
 .pl{ list-style:none; margin:0; padding:0; border-top:1px solid var(--ink); }
 .pl li{ display:grid; grid-template-columns:62px minmax(0,1fr); gap:14px; align-items:baseline; padding:22px 0; border-bottom:1px solid var(--line); }
 .pl .n{ font-family:var(--line-font); font-weight:300; font-size:2rem; line-height:1; letter-spacing:.04em; color:var(--taupe); }
-.pl p{ margin:0; font-weight:600; font-size:1.08rem; line-height:1.6; }
+.pl p{ margin:0; font-weight:400; font-size:1.08rem; line-height:1.6; }
 @media (min-width:900px){
   .promise{ grid-template-columns:minmax(0,5fr) minmax(0,6fr); gap:72px; align-items:start; }
   .promise figure{ position:sticky; top:100px; }
@@ -144,11 +145,11 @@ a{ color:inherit; }
 .cards{ display:grid; gap:12px; }
 .card{ padding:26px 24px; background:#FFFFFF; border:1px solid var(--line); border-radius:var(--r); }
 .card .tag{ display:block; font-family:var(--line-font); font-weight:400; font-size:.74rem; letter-spacing:.3em; color:var(--soft); }
-.card h3{ margin:8px 0 14px; font-weight:600; font-size:1.12rem; line-height:1.5; }
-.card .pr{ margin:0; font-family:var(--line-font); font-weight:400; font-size:1.9rem; letter-spacing:.02em; line-height:1; }
+.card h3{ margin:8px 0 14px; font-weight:400; font-size:1.12rem; line-height:1.5; }
+.card .pr{ margin:0; font-family:var(--line-font); font-weight:300; font-size:1.9rem; letter-spacing:.02em; line-height:1; }
 .card .pr span{ font-family:var(--sans); font-size:1rem; margin-left:2px; }
 .more{ display:flex; justify-content:space-between; gap:12px; margin:4px 0 0; padding:16px 2px; border-bottom:1px solid var(--line); }
-.more b{ font-weight:600; }
+.more b{ font-weight:400; }
 .more span{ color:var(--soft); white-space:nowrap; }
 .price .note{ margin:14px 0 0; font-size:.9rem; color:var(--soft); }
 .price figure{ margin:0; max-width:300px; }
@@ -167,7 +168,7 @@ a{ color:inherit; }
 .visit .btns{ display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:8px; margin-top:22px; }
 .visit .btns .fill{ grid-column:1 / -1; }
 .hours{ width:100%; margin-top:28px; border-collapse:collapse; }
-.hours th, .hours td{ padding:12px 2px; border-bottom:1px solid var(--line); text-align:left; font-weight:400; }
+.hours th, .hours td{ padding:12px 2px; border-bottom:1px solid var(--line); text-align:left; font-weight:300; }
 .hours th{ width:44%; color:var(--soft); }
 .hours tr:first-child th, .hours tr:first-child td{ border-top:1px solid var(--ink); }
 .hours .off td{ color:var(--soft); }
@@ -187,7 +188,7 @@ a{ color:inherit; }
 .foot nav a{ font-size:.9rem; text-underline-offset:3px; }
 .foot small{ display:block; margin-top:24px; font-size:.76rem; color:#CFC3B8; }
 .quick{ position:fixed; left:0; right:0; bottom:0; z-index:60; display:grid; grid-template-columns:1.4fr 1fr 1fr; gap:6px; padding:8px 10px calc(8px + env(safe-area-inset-bottom)); background:var(--bg); border-top:1px solid var(--line); }
-.quick a{ display:flex; align-items:center; justify-content:center; min-height:48px; border:1px solid var(--ink); border-radius:var(--r); font-size:.88rem; font-weight:600; text-decoration:none; color:var(--ink); }
+.quick a{ display:flex; align-items:center; justify-content:center; min-height:48px; border:1px solid var(--ink); border-radius:var(--r); font-size:.88rem; font-weight:500; text-decoration:none; color:var(--ink); }
 .quick a.fill{ background:var(--ink); color:#FFFFFF; }
 @media (min-width:900px){ .quick{ display:none; } body{ padding-bottom:0; } }
 

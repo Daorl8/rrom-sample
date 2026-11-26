@@ -1,4 +1,4 @@
-# STRUCTURE · rrom-sample (v0.1 · 최근 게시물 톤 베이지 · 토프 · 진한 브라운 + 가는 대문자 라벨 · 약속 5조항 중심 · 모서리 2px · 배포 예정 rrom-sample.lgt3232.workers.dev)
+# STRUCTURE · rrom-sample (v0.1.1 · 최근 게시물 톤 베이지 · 토프 · 진한 브라운 + 가는 대문자 라벨 · 약속 5조항 중심 · 모서리 2px · 배포 예정 rrom-sample.lgt3232.workers.dev)
 
 ```
 rrom-sample/
@@ -6,7 +6,7 @@ rrom-sample/
 ├─ wrangler.toml              name = rrom-sample
 ├─ .assetsignore              img/ · _old/ · 문서 · index_*.html · _deploy 배포 제외
 ├─ rr-jost-v01.woff2          영문 라벨 · 번호 · 가격 숫자 (Jost 300–500 · ASCII)
-├─ rr-pretendard-v01.woff2    한글 · 본문 (Pretendard 400–700 · 페이지 글자만 → 문구 바꾸면 재생성 + 이름 버전 올리기 R-43)
+├─ rr-pretendard-v02.woff2    한글 · 본문 (Pretendard 300–500 · 본문 300 · 얇은 굵기 · 페이지 글자만 → 문구 바꾸면 재생성 + 이름 버전 올리기 R-43)
 ├─ rr-room.webp               히어로 시술실 1136×789
 ├─ rr-leg.webp                상담 · 다리 왁싱 900×1191
 ├─ rr-brow.webp               약속 · 눈썹 900×921
@@ -35,4 +35,4 @@ rrom-sample/
 - `.reveal`(setInterval · 화면 90% 선 · 바닥이면 전부) · 앵커 rAF 스크롤(R-25 · 헤더 + 10px). reduced-motion 분기 없음. 흐르는 띠 없음.
 
 ## 폰트 재생성
-문구 바꾸면 빠진 글자 검사(LESSONS §26). Pretendard `fonts/Pretendard-1.3.9/public/variable/PretendardVariable.ttf` → `fonttools varLib.instancer wght=400:700` → pyftsubset. Jost `fonts/fonts-main/ofl/jost/Jost[wght].ttf` → `wght=300:500`.
+문구 바꾸면 빠진 글자 검사(LESSONS §26). Pretendard `fonts/Pretendard-1.3.9/public/variable/PretendardVariable.ttf` → `fonttools varLib.instancer wght=300:500` → pyftsubset. Jost `fonts/fonts-main/ofl/jost/Jost[wght].ttf` → `wght=300:500`.
